@@ -3,6 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>Michael's Resume</title>
+        <style>
+            .thumbnail {
+              position: relative;
+              width: 200px;
+              height: 200px;
+              overflow: hidden;
+              float: left;
+            }
+            .thumbnail img {
+              position: absolute;  
+              left: 50%;
+              top: 50%;
+              height: 100%;
+              width: auto;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+            .thumbnail img.portrait {
+                width: 100%;
+                height: auto;
+            }
+          </style>
     </head>
 
     <body>
@@ -35,10 +58,12 @@
                 <li><a href="https://github.com/michaelcolon19?tab=repositories">My GitHub</a></li>
             </ul>
         <h2>Work Samples</h2>
-            <img src="Collage Critique.jpg" alt="Collage" height=450>
-            <img src="Me and Pakkun.jpg" alt="Me and Pakkun" height=450>
-            <img src="Michael Colon AD.jpg" alt="AD" height=450>
-            <img src="MichaelColonSuperKid.jpg" alt="Super Kid" height=450>
-            <img src="randomstuffMichaelColon.jpg" alt="Random Stuff" height=450>
+            <a href="collagecritique.html"><div class="thumbnail"><img src="Collage Critique.jpg" alt="Collage" class="portrait"></div></a>
+            <a href="meandpakkun.html"><div class="thumbnail"><img  src="Me and Pakkun.jpg" alt="Me and Pakkun" height=450></div></a>
+            <a href="michaelcolonAD.html"><div class="thumbnail"><img src="Michael Colon AD.jpg" alt="AD" class="portrait"></div></a>
+            <a href="superkid.html"><div class="thumbnail"><img src="MichaelColonSuperKid.jpg" alt="Super Kid" class="portrait"></div></a>
+            <a href="randomstuff.html"><div class="thumbnail"><img src="randomstuffMichaelColon.jpg" alt="Random Stuff" class="portrait"></div></a>
+
+            
     </body>
 </html>
