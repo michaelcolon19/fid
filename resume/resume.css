@@ -1,5 +1,6 @@
 * { margin: 0; padding: 0; }
 body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background-color: #faf2e4;}
+#contact-info { text-align: center;}
 .clear { clear: both; }
 #page-wrap { width: 800px; margin: 40px auto 60px; background: url(images/bond-paper.jpg); padding: 50px 26px 0 60px;}
 #pic { float: right; margin: -30px 0 0 0; }
@@ -14,7 +15,7 @@ a:hover { border-bottom-style: solid; color: black; }
 
 ul { margin: 0 0 32px 17px; }
 #objective { width: 750px; float: left; }
-#objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+#objective p { font-family: Georgia, Serif; font-style: italic; color: #666; padding: 8px 0 0 0; }
 
 dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
 dd { width: 570px; float: right; }
