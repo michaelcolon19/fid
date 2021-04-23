@@ -119,3 +119,7 @@ dd.clear {
     border-bottom: 1px solid #CCC;
     margin-top: 30px;
 }
+
+p img {
+    height: 750px;
+}
