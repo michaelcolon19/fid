@@ -46,10 +46,10 @@ footer img {
 }
 
 .page-wrap { 
-    width: 1100px; 
-    margin: 40px auto 60px; 
+    width: 98%; 
+    margin: 0 auto; 
     background: url(../images/bond-paper.jpg); 
-    padding: 0 26px 0 60px;
+    padding: 5px 26px 0 26px;
 }
 
 /* Style the top navigation bar */
