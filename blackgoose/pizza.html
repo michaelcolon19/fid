@@ -24,7 +24,7 @@
 
       <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
         <fieldset><legend>Your Information</legend>
-          <ul>
+          <ul class="pizza-ul">
             <li><label for="form-name">Name:</label> <input id="form-name" type="text" name="customername"></li>
             <li><label for="form-address">Address:</label> <input id="form-address" type="text" name="address"></li>
             <li><label for="form-telephone">Telephone Number:</label> <input id="form-telephone" type="tel" name="telephone"></li>
@@ -40,7 +40,7 @@
           <legend>Pizza specs</legend>
           <fieldset>
             <legend>Crust <em>(Choose one)</em>:</legend>
-            <ul>
+            <ul class="pizza-ul">
               <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
               <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
               <li><label><input type="radio" name="crust" value="cheese stuffed"> Cheese-stuffed crust</label></li>
@@ -49,7 +49,7 @@
           </fieldset>
           <fieldset>
             <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
-            <ul>
+            <ul class="pizza-ul">
               <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked="checked"> Red sauce</label></li>
               <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
               <li><label><input type="checkbox" name="toppings[]" value="mozzarella cheese"> Mozzarella Cheese</label></li>

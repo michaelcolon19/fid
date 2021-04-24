@@ -49,7 +49,7 @@ footer img {
     width: 1100px; 
     margin: 40px auto 60px; 
     background: url(../images/bond-paper.jpg); 
-    padding: 0px 26px 0 60px;
+    padding: 0 26px 0 60px;
 }
 
 /* Style the top navigation bar */
@@ -116,11 +116,11 @@ footer img {
     background-color:#333;
     text-align: center;
     cursor: pointer;
-    width: 15%;
+    width: 25%;
     text-decoration: none;
 }
 
-ol, ul { 
+.pizza-ul { 
     list-style-type: none;
 }
 
