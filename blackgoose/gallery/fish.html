@@ -1,37 +1,44 @@
 <!doctype html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
     <title>Gallery: Catch of the Day</title>
-    <style>
-      body {
-        background-color: #faf2e4;
-        margin: 0 10%;
-        font-family: sans-serif;
-        text-align: center;
-      }
-
-      h1 {
-        text-align: center;
-        font-family: serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        border-bottom: 1px solid #57b1dc;
-        margin-top: 30px;
-      }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/blackgoose.css">
   </head>
 
   <body>
+    <div class="page-wrap">
+      <h1><img src="../images/blackgoose.png" alt="logo"><br>Gallery: Catch of the Day</h1>
+      <div class="navbar">
+        <a href="/fid/blackgoose/index.html">Home</a>
+        <a href="/fid/blackgoose/menu.html">Menu</a>
+        <a href="/fid/blackgoose/gallery/index.html">Gallery</a>
+        <a href="/fid/blackgoose/bgnews.html">News</a>
+        <a href="/fid/blackgoose/jenskitchen/index.html">Chef Jen</a>
+        <a href="/fid/blackgoose/jenskitchen/glossary.html" target="_blank" class="right">Glossary</a>
+      </div>
+      <p class="pizza-order"><img src="photos/fish-800.jpg" alt="fresh fish of the day" class="gallery-img"></p>
+      <p class="pizza-order"><a href="index.html" class="button">Back to Gallery</a></p>
 
-    <h1>Gallery: Catch of the Day</h1>
+      <footer>
+        <div id="about">
+            <p>Location:<br> Baker's Corner, Seekonk, MA</p>
+            <p>Hours:<br> Monday through Thursday, <time datetime="11:00">11am</time> to <time datetime="21:00">9pm</time><br> Friday and Saturday, <time datetime="11:00">11am</time> to <time datetime="23:00">11pm</time></p>
+        </div>
+        
+        <p>Please visit our social media pages</p>  
+        <p>
+            <img src="../svg/icons/twitter.svg" alt="twitter">
+            <img src="../svg/icons/facebook.svg" alt="facebook">
+            <img src="../svg/icons/instagram.svg" alt="instagram">
+        </p>
 
-    <p><img src="photos/fish-800.jpg" alt="fresh fish of the day" width="800" height="600"></p>
-
-    <p><a href="index.html">[Back to Gallery]</a></p>
-
+        <p><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small></p>
+      </footer>
+    </div>
   </body>
 
 </html>

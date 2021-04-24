@@ -4,74 +4,79 @@
     <head>
         <meta charset="utf-8">
         <title>The Black Goose Bistro News</title>
-        <style>
-            body {  background-color: #faf2e4;  margin: 0 10%;  font-family: sans-serif;  }
-            h1 {  text-align: center;  font-family: serif;  font-weight: normal;  text-transform: uppercase;  border-bottom: 1px solid #57b1dc;  margin-top: 30px;}
-            h2 {  color: #d1633c;  font-size: 1em;}
-        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/blackgoose.css">
     </head>
     <body>
-        <header>
-            <h1><img src="images/blackgoose.png" alt="logo"><br>The Black Goose Bistro News</h1>
+        <div class="page-wrap">
+            <header>
+                <h1><img src="images/blackgoose.png" alt="logo"><br>The Black Goose Bistro News</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="/fid/blackgoose/index.html">Home</a></li>
-                    <li><a href="/fid/blackgoose/menu.html">Menu</a></li>
-                    <li><a href="/fid/blackgoose/gallery/index.html">Gallery</a></li>
-                    <li><a href="/fid/blackgoose/bgnews.html">News</a></li>
-                    <li><a href="/fid/blackgoose/jenskitchen/index.html">Chef Jen</a></li>
-                    <li><a href="/fid/blackgoose/jenskitchen/glossary.html" target="_blank">Glossary</a></li>
-                </ul>   
-            </nav>
-        </header>
-        <article>
-            <h2>Cooking with Daniel</h2>
-            <p>posted by BGB, <time datetime="2021-04-13">April 13, 2021</time></p>
-            <p>This week we are <a href="/fid/blackgoose/cooking.html">Cooking with Daniel</a> from Nada Surf!</p>
-        </article>
-        <article>
-            <h2>Summer Menu Items</h2>
-            <p>posted by BGB, <time datetime="2017-06-18">June 18, 2017</time></p>
-            <p>Our chef has been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while the days are still long.</p>
-            <section id="appetizers">
-                <h3>Appetizers</h3>
-                <dl>
-                    <dt class="newitem">Black bean purses</dt>
-                    <dd>Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyl-lo and baked until golden. <span class="price">$3.95</span></dd>
-        
-                    <dt class="newitem">Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
-                    <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
-                </dl>
-            </section>
-            <section id="maincourses">
-                <h3>Main courses</h3>
-                <dl>
-                    <dt class="newitem">Shrimp sate kebabs with peanut sauce</dt>
-                    <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
-        
-                    <dt class="newitem">Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
-                    <dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <span class="price">$12.95</span></dd>
-                </dl>
-            </section>
-              
-        </article>
+                <div class="navbar">
+                    <a href="/fid/blackgoose/index.html">Home</a>
+                    <a href="/fid/blackgoose/menu.html">Menu</a>
+                    <a href="/fid/blackgoose/gallery/index.html">Gallery</a>
+                    <a href="/fid/blackgoose/bgnews.html" class="active">News</a>
+                    <a href="/fid/blackgoose/jenskitchen/index.html">Chef Jen</a>
+                    <a href="/fid/blackgoose/jenskitchen/glossary.html" target="_blank" class="right">Glossary</a>
+                </div>
+            </header>
+            <article>
+                <h2>Cooking with Daniel</h2>
+                <p>posted by BGB, <time datetime="2021-04-13">April 13, 2021</time></p>
+                <p>This week we are <a href="/fid/blackgoose/cooking.html">Cooking with Daniel</a> from Nada Surf!</p>
+            </article>
+            <article>
+                <h2>Summer Menu Items</h2>
+                <p>posted by BGB, <time datetime="2017-06-18">June 18, 2017</time></p>
+                <p>Our chef has been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while the days are still long.</p>
+                <section id="appetizers">
+                    <h3>Appetizers</h3>
+                    <dl>
+                        <dt class="newitem">Black bean purses</dt>
+                        <dd>Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyl-lo and baked until golden. <span class="price">$3.95</span></dd>
+            
+                        <dt class="newitem">Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
+                        <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
+                    </dl>
+                </section>
+                <section id="maincourses">
+                    <h3>Main courses</h3>
+                    <dl>
+                        <dt class="newitem">Shrimp sate kebabs with peanut sauce</dt>
+                        <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
+            
+                        <dt class="newitem">Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
+                        <dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <span class="price">$12.95</span></dd>
+                    </dl>
+                </section>
+                
+            </article>
 
-        <article>
-            <h2>Low and Slow</h2>
-            <p>posted by BGB, <time datetime="2016-11-15">November 15, 2016</time></p>
-            <p>This week I am <em>extremely</em> excited about a new cooking technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature you want the food to be cooked to. In his book, <cite>Cooking for Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching.</q></p>
+            <article>
+                <h2>Low and Slow</h2>
+                <p>posted by BGB, <time datetime="2016-11-15">November 15, 2016</time></p>
+                <p>This week I am <em>extremely</em> excited about a new cooking technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature you want the food to be cooked to. In his book, <cite>Cooking for Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching.</q></p>
 
-            <p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with Dill Hollandaise</b>. To reserve a seat at the chef table, contact us before <time datetime="20161130">November 30</time>.</p>
-        </article>
+                <p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with Dill Hollandaise</b>. To reserve a seat at the chef table, contact us before <time datetime="20161130">November 30</time>.</p>
+            </article>
 
-        <footer>
-            <div id="about">
-                <p>Location:<br> Baker's Corner, Seekonk, MA</p>
-                <p>Hours:<br> Tuesday to Saturday, <time datetime="11:00">11am</time> to <time datetime="23:00">11pm</time></p>
-            </div>
+            <footer>
+                <div id="about">
+                    <p>Location:<br> Baker's Corner, Seekonk, MA</p>
+                    <p>Hours:<br> Monday through Thursday, <time datetime="11:00">11am</time> to <time datetime="21:00">9pm</time><br> Friday and Saturday, <time datetime="11:00">11am</time> to <time datetime="23:00">11pm</time></p>
+                </div>
+                
+                <p>Please visit our social media pages</p>  
+                <p>
+                    <img src="svg/icons/twitter.svg" alt="twitter">
+                    <img src="svg/icons/facebook.svg" alt="facebook">
+                    <img src="svg/icons/instagram.svg" alt="instagram">
+                </p>
 
-            <p><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small></p>
-        </footer>
+                <p><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small></p>
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,107 +1,97 @@
 <!DOCTYPE html >
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" >
     <title>Blackstone Bistro: Pizza-on-Demand</title>
-    <style type="text/css">
-        ol, ul { 
-          list-style-type: none;
-        }
-        body {
-          background-color: #faf2e4;
-          margin: 0 10%;
-          font-family: sans-serif;
-        }
-        h1 {
-          text-align: center;
-          font-family: serif;
-          font-weight: normal;
-          text-transform: uppercase;
-          border-bottom: 1px solid #57b1dc;
-          margin-top: 30px;
-        }
-        h2 {
-          color: #d1633c;
-          font-size: 1em;
-        }
-        footer {
-          border-top: 1px solid #57b1dc;  
-          text-align: center;  
-          padding-top: 1em; 
-        } 
-        footer img {
-          width: 40px;  
-          height: 40px;  
-          margin-left: .5em;  
-          margin-right: .5em; 
-        }
-        fieldset {
-          border-color: #579cdc;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blackgoose.css">
   </head>
 
   <body>
+    <div class="page-wrap">
+      <h1><img src="images/blackgoose.png" alt="logo"><br>Blackstone Bistro | Pizza-on-Demand</h1>
+      <div class="navbar">
+        <a href="/fid/blackgoose/index.html">Home</a>
+        <a href="/fid/blackgoose/menu.html">Menu</a>
+        <a href="/fid/blackgoose/gallery/index.html">Gallery</a>
+        <a href="/fid/blackgoose/bgnews.html">News</a>
+        <a href="/fid/blackgoose/jenskitchen/index.html">Chef Jen</a>
+        <a href="/fid/blackgoose/jenskitchen/glossary.html" target="_blank" class="right">Glossary</a>
+      </div>
 
-    <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+      <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
-    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
-
-    <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
-      <fieldset><legend>Your Information</legend>
-        <ul>
-          <li><label for="form-name">Name:</label> <input id="form-name" type="text" name="customername"></li>
-          <li><label for="form-address">Address:</label> <input id="form-address" type="text" name="address"></li>
-          <li><label for="form-telephone">Telephone Number:</label> <input id="form-telephone" type="tel" name="telephone"></li>
-          <li><label for="form-email">Email:</label> <input id="form-email" type="email" name="email"></li>
-          <li>Delivery instructions:<br
-            ><textarea id="form-instructions" name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
-        </ul>
-      </fieldset>
-
-      <h2>Design Your Dream Pizza:</h2>
-
-      <fieldset>
-        <legend>Pizza specs</legend>
-        <fieldset>
-          <legend>Crust <em>(Choose one)</em>:</legend>
+      <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
+        <fieldset><legend>Your Information</legend>
           <ul>
-            <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
-            <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
-            <li><label><input type="radio" name="crust" value="cheese stuffed"> Cheese-stuffed crust</label></li>
-            <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+            <li><label for="form-name">Name:</label> <input id="form-name" type="text" name="customername"></li>
+            <li><label for="form-address">Address:</label> <input id="form-address" type="text" name="address"></li>
+            <li><label for="form-telephone">Telephone Number:</label> <input id="form-telephone" type="tel" name="telephone"></li>
+            <li><label for="form-email">Email:</label> <input id="form-email" type="email" name="email"></li>
+            <li>Delivery instructions:<br
+              ><textarea id="form-instructions" name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
-          <ul>
-            <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked="checked"> Red sauce</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="mozzarella cheese"> Mozzarella Cheese</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
-            <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Number</legend>
-          <p>How many pizzas:
-            <select name="pizzas" size="1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </p>
-        </fieldset>
-      </fieldset>  
-      <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
-    </form>
 
-    <p><a href="index.html">Back to the home page</a></p>
-    
+        <h2>Design Your Dream Pizza:</h2>
+
+        <fieldset>
+          <legend>Pizza specs</legend>
+          <fieldset>
+            <legend>Crust <em>(Choose one)</em>:</legend>
+            <ul>
+              <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+              <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+              <li><label><input type="radio" name="crust" value="cheese stuffed"> Cheese-stuffed crust</label></li>
+              <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
+            <ul>
+              <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked="checked"> Red sauce</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="mozzarella cheese"> Mozzarella Cheese</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+              <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Number</legend>
+            <p>How many pizzas:
+              <select name="pizzas" size="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </p>
+          </fieldset>
+        </fieldset>  
+        <p><input type="submit" value="Bring me a pizza!" class="button">&nbsp;<input type="reset" class="button"></p>
+      </form>
+
+      <p class="pizza-order"><a href="index.html" class="button">Back to the home page</a></p>
+      <footer>
+        <div id="about">
+            <p>Location:<br> Baker's Corner, Seekonk, MA</p>
+            <p>Hours:<br> Monday through Thursday, <time datetime="11:00">11am</time> to <time datetime="21:00">9pm</time><br> Friday and Saturday, <time datetime="11:00">11am</time> to <time datetime="23:00">11pm</time></p>
+        </div>
+        
+        <p>Please visit our social media pages</p>  
+        <p>
+            <img src="svg/icons/twitter.svg" alt="twitter">
+            <img src="svg/icons/facebook.svg" alt="facebook">
+            <img src="svg/icons/instagram.svg" alt="instagram">
+        </p>
+
+        <p><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small></p>
+      </footer>
+    </div>
   </body>
 </html>
